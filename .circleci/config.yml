@@ -12,6 +12,10 @@ jobs:
           command: bundle install
           
       - run:
+          name: build ins
+          command: gem install unf_ext -v '0.0.9'
+
+      - run:
           name: build jekyll
           command: bundle exec jekyll build
 
